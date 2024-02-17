@@ -7,7 +7,10 @@
     <title>Nuvosa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" id="theme" href="./light.css" />
+    <!-- <link rel="stylesheet" id="theme" href="./dark.css" /> -->
+
+
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 
@@ -41,6 +44,7 @@
                         <a class="nav-link myactive fs-5" aria-current="page" href="#">Contact</a>
                     </li>
                 </ul>
+                <button class="me-3" id="theme-toggle">Dark</button>
                 <form class="d-flex" role="search">
                     <button type="button" class="btn btn-outline-secondary me-2">
                         Let's Talk
@@ -61,7 +65,7 @@
                 Increase your web <br />
                 traffic with our
                 <span
-                    class="border border-primary position-relative border-2 d-inline-block text-primarynew expert-rotate ms-3 mt-3 ">
+                    class="border border-primary position-relative border-2 d-inline-block text-primarynew expert-rotate ms-3 mt-3 expert ">
                     expert
                     <span class="position-absolute dot top-dot"></span>
                     <span class="position-absolute dot right-dot"></span>
@@ -527,7 +531,8 @@
                             <div class="card-body">
                                 <h5 class="card-title py-3">Plus</h5>
                                 <p class="card-subtitle mb-2 "><span class="position-absolute dollar-sign">$</span>
-                                    <span class="fw-medium fs-1 position-relative ">46</span> / month</p>
+                                    <span class="fw-medium fs-1 position-relative price ">46</span> / month
+                                </p>
                                 <p class="card-text pb-4 fs-6"><br>408GB Bandwidth<br> Business & Finance Analysing <br>
                                     24 Hour
                                     Support<br> Customer Management</p>
@@ -541,7 +546,8 @@
                             <div class="card-body">
                                 <h5 class="card-title py-3">Beginner</h5>
                                 <p class="card-subtitle mb-2 "><span class="position-absolute dollar-sign">$</span>
-                                    <span class="fw-medium fs-1">66</span> / month</p>
+                                    <span class="fw-medium fs-1 price">66</span> / month
+                                </p>
                                 <p class="card-text pb-4 fs-6"><br>408GB Bandwidth<br> Business & Finance Analysing <br>
                                     24 Hour
                                     Support<br> Customer Management</p>
@@ -555,7 +561,8 @@
                             <div class="card-body">
                                 <h5 class="card-title py-3">Advanced</h5>
                                 <p class="card-subtitle mb-2 "><span class="position-absolute dollar-sign">$</span>
-                                    <span class="fw-medium fs-1">86</span> / month</p>
+                                    <span class="fw-medium fs-1 price">86</span> / month
+                                </p>
                                 <p class="card-text pb-4 fs-6"><br>408GB Bandwidth<br> Business & Finance Analysing <br>
                                     24 Hour
                                     Support<br> Customer Management</p>
@@ -714,7 +721,7 @@
                         </div>
                     </div>
 
-                    \
+
                 </div><!-- End Row -->
                 <div class="row justify-content-center mt-4">
                     <div class="col-auto">
@@ -779,6 +786,7 @@
                 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
                 crossorigin="anonymous">
                 </script>
+            <script src="./script.js"></script>
 </body>
 
 </html>

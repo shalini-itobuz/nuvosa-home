@@ -1,19 +1,32 @@
+:root {
+    --primary-color: #6F77F1;
+    --red-color: #BC424E;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --background-color: #FAFAFA;
+    --hover-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
+body {
+    background-color: white;
+}
+
+#theme-toggle {
+    width: 100px !important;
+    ;
+    border-radius: 5px;
+}
+
+
 
 .text-primarynew {
-    color: #6F77F1;
+    color: var(--primary-color);
 }
-
-:root {
-    --red-color: #BC424E;
-}
-
-
 
 .top-dot,
 .bottom-dot,
@@ -21,9 +34,8 @@
 .right-dot {
     width: 10px;
     height: 10px;
-    background-color: #6F77F1;
+    background-color: var(--primary-color);
     border-radius: 50%;
-
 }
 
 .left-dot {
@@ -47,11 +59,10 @@
 }
 
 .myactive:hover {
-    border-bottom: 2px #6F77F1 dashed;
+    border-bottom: 2px var(--primary-color) dashed;
 }
 
 .web-traffic {
-
     margin: 0 auto;
 }
 
@@ -65,7 +76,6 @@
 
 .circle {
     width: 50px;
-
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -80,7 +90,6 @@
 
 .marketing-card {
     max-width: 350px;
-
     transform: scale(0.9);
 }
 
@@ -134,7 +143,7 @@
     left: 50%;
     width: 50px;
     height: 2px;
-    background-color: #6F77F1;
+    background-color: var(--primary-color);
     /* Blue color for the dash */
     transform: translateX(-50%);
 }
@@ -143,7 +152,6 @@
     background: url(./images/business-soln/solution-background.svg) no-repeat cover;
     width: 100vw;
     height: auto;
-
 }
 
 .solutions-heading {
@@ -181,7 +189,7 @@
 
 .card-business:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 18px var(--shadow-color);
 }
 
 .card-body {
@@ -195,7 +203,7 @@
 }
 
 .choose-us-section {
-    background: #FAFAFA cover;
+    background: var(--background-color) cover;
 }
 
 .choose-us {
@@ -214,10 +222,8 @@
 
 .choose-us-card {
     margin-bottom: 20px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 18px var(--shadow-color);
 }
-
-
 
 .card-body {
     display: flex;
@@ -225,10 +231,6 @@
     align-items: center;
     text-align: center;
 }
-
-
-
-
 
 .sde-need-two-part-section {
     padding: 50px 0;
@@ -251,18 +253,16 @@
 .sde-need-card {
     margin: 20px 0;
     background-color: white;
-
 }
 
 .sde-need-card:hover {
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 18px var(--shadow-color);
 }
 
 .sde-need-card-text,
 .sde-need-card-title {
     text-align: left;
 }
-
 
 .sde-need-card img {
     max-width: 100%;
@@ -278,21 +278,18 @@
     width: 10vw;
 }
 
-
 .speed-img {
     width: 46vw;
-
 }
 
 .pricing-card {
     background-color: white;
     transition: background-color 0.3s;
-
 }
 
 .pricing-card:hover,
 .pricing-card:active {
-    background-color: #6F77F1;
+    background-color: var(--primary-color);
     color: #FAFAFA;
 }
 
@@ -320,16 +317,16 @@
 .meet-our-team-card {
     background-color: white;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .meet-our-team-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .meet-our-team-card-title:hover {
-    color: #6F77F1;
+    color: var(--primary-color);
 }
 
 .rounded-circle {
@@ -344,20 +341,19 @@
 
 .clients-say {
     width: 100%;
-
 }
 
 .clients-say-card {
     text-align: center;
     background-color: white;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 18px var(--shadow-color);
     padding: 15px;
 }
 
 .clients-say-dot {
     height: 10px;
     width: 10px;
-    background-color: #333;
+    background-color: var(--hover-color);
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px;
@@ -365,50 +361,13 @@
 
 .clients-say-dot:hover,
 .clients-say-dot:active {
-    background-color: #6F77F1;
-}
-
-@media screen and (min-width: 425px) {
-    .marketing-card {
-        margin: 0 auto;
-    }
-
-    h2 {
-        font-size: 31px !important;
-    }
-
-    .marketing-card {
-        transform: scale(1) !important;
-    }
-
-    .custom-bg {
-        background-color: rgba(255, 255, 255, 0.7);
-        /* White with 0.7 opacity */
-    }
-
-    .card {
-        text-align: center;
-        height: 45vh;
-    }
-
-    .card img {
-        max-width: 100%;
-        height: auto;
-
-        margin-bottom: 30px;
-    }
-
-}
-
-.client-dot {
-    display: none;
-
+    background-color: var(--primary-color);
 }
 
 .clients-say-section-container {
     text-align: center;
     padding: 40px 20px;
-    background-color: #FAFAFA;
+    background-color: var(--background-color);
 }
 
 .clients-say-subscribe-form {
@@ -421,7 +380,6 @@
 .clients-say-form-group {
     margin-right: 10px;
 }
-
 
 .footer {
     padding: 20px 0;
@@ -460,6 +418,39 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 425px) {
+    .marketing-card {
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 31px !important;
+    }
+
+    .marketing-card {
+        transform: scale(1) !important;
+    }
+
+    .custom-bg {
+        background-color: rgba(255, 255, 255, 0.7);
+        /* White with 0.7 opacity */
+    }
+
+    .card {
+        text-align: center;
+        height: 45vh;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.client-dot {
+    display: none;
+}
 
 @media(max-width:430px) {
     .web-traffic {
@@ -477,7 +468,6 @@
         padding-top: 20px;
     }
 }
-
 
 @media(min-width:768px) {
     .socialmedia-girl {
@@ -499,7 +489,6 @@
         width: 82%;
         margin-left: 17%;
         margin-top: 59%;
-
     }
 
     .choose-us-card img {
@@ -510,7 +499,6 @@
 
     .speed-img {
         width: 33vw;
-
     }
 
     .client-dot {
@@ -532,7 +520,6 @@
 
     .pricing-card {
         height: 50vw;
-
     }
 
     .client-card {
@@ -542,8 +529,6 @@
     .learn-more-btn {
         margin-top: 15%;
     }
-
-
 }
 
 @media(min-width:1024px) {
@@ -555,7 +540,6 @@
 
     .speed-img {
         width: 46vw;
-
     }
 
     .client-dot {
@@ -563,7 +547,6 @@
         height: 23px;
         border-radius: 50%;
         margin-top: 25px;
-
     }
 
     .client-dot {
@@ -587,7 +570,6 @@
         margin-top: 15%;
     }
 }
-
 
 .clients-say-card {
     max-width: 500px;

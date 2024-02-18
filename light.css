@@ -2,9 +2,16 @@
     --primary-color: #6F77F1;
     --red-color: #BC424E;
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --background-color: #FAFAFA;
-    --hover-color: #333;
+    --background-color-light: #FAFAFA;
+    --background-color-dark: #333; /* Added for dark mode */
+    --text-color-light: #212528;
+    --text-color-dark: #FAFAFA; /* Added for dark mode */
+    --hover-color-light: #333;
+    --hover-color-dark: #6F77F1;
+    --background-color: var(--background-color-light); /* Default background color */
+    --text-color: var(--text-color-light); /* Default text color */
 }
+
 
 * {
     margin: 0;
@@ -12,17 +19,17 @@
     box-sizing: border-box;
 }
 
+
+
 body {
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #theme-toggle {
     width: 100px !important;
-    ;
     border-radius: 5px;
 }
-
-
 
 .text-primarynew {
     color: var(--primary-color);
@@ -96,7 +103,7 @@ body {
 .marketing h2 {
     max-width: 250px;
     line-height: 150%;
-    color: #212528;
+    color: var(--text-color-light);
     font-size: 25px;
     font-weight: 300;
 }
@@ -184,7 +191,7 @@ body {
     align-items: left;
     text-align: left;
     margin: 10px;
-    background-color: white;
+    background-color: var(--background-color-light);
 }
 
 .card-business:hover {
@@ -196,6 +203,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+   
 }
 
 .growing-business-icon {
@@ -203,7 +211,7 @@ body {
 }
 
 .choose-us-section {
-    background: var(--background-color) cover;
+    background: var(--background-color-light) cover;
 }
 
 .choose-us {
@@ -224,7 +232,10 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 4px 18px var(--shadow-color);
 }
+.choose-us-card:hover{
+    scale: 1.2;
 
+}
 .card-body {
     display: flex;
     flex-direction: column;
@@ -252,7 +263,7 @@ body {
 
 .sde-need-card {
     margin: 20px 0;
-    background-color: white;
+    background-color: var(--background-color-light);
 }
 
 .sde-need-card:hover {
@@ -283,26 +294,27 @@ body {
 }
 
 .pricing-card {
-    background-color: white;
+    background-color: var(--background-color-light);
     transition: background-color 0.3s;
+    padding-bottom: 16%;
 }
 
 .pricing-card:hover,
 .pricing-card:active {
     background-color: var(--primary-color);
-    color: #FAFAFA;
+    color: var(--background-color-dark);
 }
 
 .get-started-btn {
-    background-color: white;
-    color: #007BFF;
+    background-color: var(--background-color-light);
+    color: var(--primary-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
 .get-started-btn:hover,
 .get-started-btn:active {
     background-color: #FFC107;
-    color: white;
+    color: var(--background-color-dark);
 }
 
 .dollar-sign {
@@ -315,7 +327,7 @@ body {
 }
 
 .meet-our-team-card {
-    background-color: white;
+    background-color: var(--background-color-light);
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 8px var(--shadow-color);
 }
@@ -339,13 +351,17 @@ body {
     transition: filter 0.3s;
 }
 
+.social-logo:hover {
+    filter: brightness(70%);
+}
+
 .clients-say {
     width: 100%;
 }
 
 .clients-say-card {
     text-align: center;
-    background-color: white;
+    background-color: var(--background-color-light);
     box-shadow: 0 4px 18px var(--shadow-color);
     padding: 15px;
 }
@@ -353,7 +369,7 @@ body {
 .clients-say-dot {
     height: 10px;
     width: 10px;
-    background-color: var(--hover-color);
+    background-color: var(--hover-color-light);
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px;
@@ -367,7 +383,7 @@ body {
 .clients-say-section-container {
     text-align: center;
     padding: 40px 20px;
-    background-color: var(--background-color);
+    background-color: var(--background-color-light);
 }
 
 .clients-say-subscribe-form {
@@ -393,13 +409,13 @@ body {
     margin-bottom: 20px;
 }
 
-.footer>nav-link {
+.footer-nav > nav-link {
     color: #6c757d;
     margin: 0 15px;
     text-decoration: none;
 }
 
-.footer>nav-link:hover {
+.footer-nav > nav-link:hover {
     color: #dc3545;
 }
 
@@ -539,7 +555,7 @@ body {
     }
 
     .speed-img {
-        width: 46vw;
+        width: 26vw;
     }
 
     .client-dot {

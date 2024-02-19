@@ -3,13 +3,13 @@
     --red-color: #BC424E;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --background-color-light: #FAFAFA;
-    --background-color-dark: #333; /* Added for dark mode */
+    --background-color-dark: #333;
     --text-color-light: #212528;
-    --text-color-dark: #FAFAFA; /* Added for dark mode */
+    --text-color-dark: #FAFAFA;
     --hover-color-light: #333;
     --hover-color-dark: #6F77F1;
-    --background-color: var(--background-color-light); /* Default background color */
-    --text-color: var(--text-color-light); /* Default text color */
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
 }
 
 
@@ -203,7 +203,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .growing-business-icon {
@@ -232,10 +232,12 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 4px 18px var(--shadow-color);
 }
-.choose-us-card:hover{
-    scale: 1.2;
+
+.choose-us-card:hover {
+    scale: 1.1;
 
 }
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -409,13 +411,13 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-nav > nav-link {
+.footer-nav>nav-link {
     color: #6c757d;
     margin: 0 15px;
     text-decoration: none;
 }
 
-.footer-nav > nav-link:hover {
+.footer-nav>nav-link:hover {
     color: #dc3545;
 }
 

@@ -1,33 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const clientsSayDots = document.querySelectorAll('.clients-say-dot');
     const themeToggle = document.getElementById('theme-toggle');
 
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         if (document.body.classList.contains('dark-mode')) {
-            document.documentElement.style.setProperty('--background-color', '#333');
+            document.documentElement.style.setProperty('--background-color', 'black');
             document.documentElement.style.setProperty('--text-color', '#FAFAFA');
             themeToggle.textContent = 'Light';
-            setTextColor('#FAFAFA'); 
+            setTextColor('#FAFAFA');
             setCardTextColor('black');
-            setChooseUsCardStyle('#864AF9', '10%'); 
-            setFooterTextColor('#FAFAFA'); 
-            setFooterNavLinkColor('#FAFAFA'); 
+            setChooseUsCardStyle('#864AF9', '10%');
+            setFooterTextColor('#FAFAFA');
+            setFooterNavLinkColor('#FAFAFA');
             clientsSayDots.forEach(dot => {
-            dot.style.backgroundColor = '#ffffff'; 
+                dot.style.backgroundColor = '#ffffff';
+                clientsSaySection('black');
             });
         } else {
             document.documentElement.style.setProperty('--background-color', '#FAFAFA');
             document.documentElement.style.setProperty('--text-color', '#212528');
             themeToggle.textContent = 'Dark';
-            setTextColor('#212528'); 
-            setCardTextColor('inherit'); 
-            setChooseUsCardStyle('', ''); 
-            setFooterTextColor('#212528'); 
-            setFooterNavLinkColor('#212528'); 
+            setTextColor('#212528');
+            setCardTextColor('inherit');
+            setChooseUsCardStyle('', '');
+            setFooterTextColor('#212528');
+            setFooterNavLinkColor('#212528');
             clientsSayDots.forEach(dot => {
-                dot.style.backgroundColor = '#333'; 
-                });
+                dot.style.backgroundColor = '#333';
+                clientsSaySection('inherit');
+            });
         }
     });
 
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     function setFooterTextColor(color) {
-        const footerTexts = document.querySelectorAll('.footer, .copyright,  .terms-policy a , .nav-link , .navbar-brand , .navbar-toggler-icon , .darktext ');
+        const footerTexts = document.querySelectorAll('.footer, .copyright,  .terms-policy a , .nav-link , .navbar-brand , .navbar-toggler-icon , .darktext ,.subscribe-tag');
         footerTexts.forEach(text => {
             text.style.color = color;
         });
@@ -64,6 +66,20 @@ document.addEventListener('DOMContentLoaded', function() {
             link.style.color = color + ' !important';
         });
     }
-   
-   
+    function clientsSaySection(backgroundColor) {
+        const chooseUsCards = document.querySelectorAll('.clients-say-section-container');
+        chooseUsCards.forEach(card => {
+            card.style.backgroundColor = backgroundColor;
+            card.style.padding = padding;
+        });
+    }
+
+
 });
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@ const cardTexts = document.querySelectorAll('.card-text, .card-title,.sde-need-c
 const chooseUsCards = document.querySelectorAll('.choose-us-card , .marketing-card');
 const footerTexts = document.querySelectorAll('.footer, .copyright,  .terms-policy a , .nav-link , .navbar-brand , .navbar-toggler-icon , .darktext ,.subscribe-tag');
 const footerNavLinks = document.querySelectorAll('.footer-nav .nav-link  ');
+const chooseUsCardsContainer = document.querySelectorAll('.clients-say-section-container');
 
 
 
@@ -37,8 +38,7 @@ function setFooterNavLinkColor(color) {
     });
 }
 function clientsSaySection(backgroundColor) {
-    const chooseUsCards = document.querySelectorAll('.clients-say-section-container');
-    chooseUsCards.forEach(card => {
+    chooseUsCardsContainer.forEach(card => {
         card.style.backgroundColor = backgroundColor;
         card.style.padding = padding;
     });

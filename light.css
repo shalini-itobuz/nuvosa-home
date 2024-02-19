@@ -1,25 +1,22 @@
 :root {
-    --primary-color: #6F77F1;
-    --red-color: #BC424E;
+    --primary-color: #6f77f1;
+    --red-color: #bc424e;
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --background-color-light: #FAFAFA;
+    --background-color-light: #fafafa;
     --background-color-dark: #333;
     --text-color-light: #212528;
-    --text-color-dark: #FAFAFA;
+    --text-color-dark: #fafafa;
     --hover-color-light: #333;
-    --hover-color-dark: #6F77F1;
+    --hover-color-dark: #6f77f1;
     --background-color: var(--background-color-light);
     --text-color: var(--text-color-light);
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 body {
     background-color: var(--background-color);
@@ -203,7 +200,6 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .growing-business-icon {
@@ -235,7 +231,6 @@ body {
 
 .choose-us-card:hover {
     scale: 1.1;
-
 }
 
 .card-body {
@@ -315,7 +310,7 @@ body {
 
 .get-started-btn:hover,
 .get-started-btn:active {
-    background-color: #FFC107;
+    background-color: #ffc107;
     color: var(--background-color-dark);
 }
 
@@ -470,7 +465,7 @@ body {
     display: none;
 }
 
-@media(max-width:430px) {
+@media (max-width: 430px) {
     .web-traffic {
         display: flex;
         flex-direction: column;
@@ -487,7 +482,7 @@ body {
     }
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .socialmedia-girl {
         position: relative;
     }
@@ -520,7 +515,7 @@ body {
     }
 
     .client-dot {
-        display: none
+        display: none;
     }
 
     .client-card {
@@ -549,7 +544,7 @@ body {
     }
 }
 
-@media(min-width:1024px) {
+@media (min-width: 1024px) {
     .mac-image {
         margin-left: 16%;
         margin-top: 37%;
